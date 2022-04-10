@@ -1,0 +1,19 @@
+@echo off
+set MinGW_PATH = C:/MinGW
+
+set MinGW_SubBin = mingw32
+
+set MinGW_Ver = 4.8.1
+
+
+ 
+
+set PATH=%PATH%;%MinGW_PATH%/bin;%MinGW_PATH%/%MinGW_SubBin%/bin
+
+set LIBRARY_PATH=%MinGW_PATH%/lib;%MinGW_PATH%/lib/gcc/mingw32/%MinGW_Ver%
+
+set C_INCLUDE_PATH=%MinGW_PATH%/include
+
+set CPLUS_INCLUDE_PATH=%MinGW_PATH%/include;%MinGW_PATH%/lib/gcc/mingw32/%MinGW_Ver%/include;%MinGW_PATH%/lib/gcc/mingw32/%MinGW_Ver%/include/c++;%MinGW_PATH%/lib/gcc/mingw32/%MinGW_Ver%/include/c++/backward;
+echo MinGW initialization successfully completed!
+echo MinGW_Ver=4.8.1

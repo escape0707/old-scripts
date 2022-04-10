@@ -1,0 +1,5 @@
+cd /d %~dp0
+cd ".\Computer Science\Software Environment"
+copy hosts %windir%\system32\drivers\etc\
+pause
+exit

@@ -1,0 +1,12 @@
+@echo off
+cd ".\Computer Science\Software Environment"
+start chrome.exe
+start My_Regedit.reg
+setres h1440 v900
+copy hosts c:\WINDOWS\system32\drivers\etc\
+ntsd -c q -pn StudentMain.exe
+copy SourceCodePro-Regular.ttf C:\WINDOWS\Fonts
+gvim74.exe
+copy molokai.vim "C:\Program Files\Vim\vimfiles\colors"
+copy _vimrc "C:\Program Files\Vim"
+exit
